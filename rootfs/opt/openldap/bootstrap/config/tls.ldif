@@ -1,13 +1,13 @@
 dn: cn=config
 changetype: modify
+replace: olcTLSCertificateKeyFile
+olcTLSCertificateKeyFile: /etc/ldap/ssl/ldap.key
+-
 replace: olcTLSCACertificateFile
 olcTLSCACertificateFile: /etc/ldap/ssl/fullchain.crt
 -
 replace: olcTLSCertificateFile
 olcTLSCertificateFile: /etc/ldap/ssl/ldap.crt
--
-replace: olcTLSCertificateKeyFile
-olcTLSCertificateKeyFile: /etc/ldap/ssl/ldap.key
 -
 replace: olcTLSVerifyClient
 olcTLSVerifyClient: never
