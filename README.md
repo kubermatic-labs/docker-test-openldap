@@ -1,3 +1,17 @@
+# OpenLDAP Test Image
+
+This image can be used to run simple integration tests for LDAP clients.
+
+It's a fork of https://github.com/rroemhild/docker-test-openldap to fix
+
+* upstream still consideres the image on DockerHub to be the primary one, even though
+  it is very outdated and does not match the README.
+* upstream's new image on gchr.io is broken at the moment.
+
+The docker image can be found on `quay.io/kubermatic-labs/openldap-test`.
+
+<hr>
+
 # OpenLDAP Docker Image for testing
 
 ![Docker Build Status](https://img.shields.io/docker/cloud/build/rroemhild/test-openldap) [![Docker Stars](https://img.shields.io/docker/stars/rroemhild/test-openldap.svg)](https://hub.docker.com/r/rroemhild/test-openldap) [![Docker Pulls](https://img.shields.io/docker/pulls/rroemhild/test-openldap.svg)](https://hub.docker.com/r/rroemhild/test-openldap)
@@ -20,7 +34,7 @@ The Flask extension [flask-ldapconn][flaskldapconn] use this image for unit test
 * Support for LDAP over TLS (STARTTLS) using a self-signed cert, or valid certificates (LetsEncrypt, etc)
 * memberOf overlay support
 * MS-AD style groups support
-* Supports Forced STARTTLS 
+* Supports Forced STARTTLS
 * Supports custom domain and custom directory structure
 
 
